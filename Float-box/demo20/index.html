@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>右侧网页浮动框</title>
+	<script src="js/jjs_jquery-1.7.2.min.js"></script>
+	<link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+<div id="wrap">
+	<ul>
+		<li>
+			<a href="#">
+				<img src="images/fo3_ll01.png" alt="" class="hide" width="131" height="49" />
+				<img src="images/fo3_l01.png" alt="" class="show" width="47" height="49" />
+			</a>
+		</li>
+
+		<li>
+			<a href="#">
+				<img src="images/fo3_ll03.png" alt="" class="hide" width="131" height="49" />
+				<img src="images/fo3_l03.png" alt="" class="show" width="47" height="49" />
+			</a>
+		</li>
+
+		<li>
+			<a href="#" class="youhui">
+				<img src="images/fo3_l02.png" alt="" class="show" width="47" height="49" />
+				<img src="images/fo3_youhui.png" alt="" class="hide" width="145" height="343" usemap="#html" />
+				<map name="html">
+					<area shape="rect" coords="26,273,115,300" href="#" alt="">
+				</map>
+			</a>
+		</li>
+
+		<li>
+			<a href="#">
+				<img src="images/fo3_ll04.png" alt="" class="hide" width="131" height="49" />
+				<img src="images/fo3_l04.png" alt="" class="show" width="47" height="49" />
+			</a>
+		</li>
+
+		<li>
+			<a href="#">
+				<img src="images/fo3_ll05.png" alt="" class="hide" width="131" height="49" />
+				<img src="images/fo3_l05.png" alt="" class="show" width="47" height="49" />
+			</a>
+		</li>
+
+		<li>
+			<a href="#" id="top_btn">
+				<img src="images/fo3_ll06.png" alt="" class="hide" width="131" height="49" />
+				<img src="images/fo3_l06.png" alt="" class="show" width="47" height="49" />
+			</a>
+		</li>
+	</ul>
+</div>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#wrap a").hover(function(){
+			if($(this).prop("className") == "youhui"){
+				$(this).children("img.hide").show();
+			}else{
+				$(this).children("img.hide").show();
+				$(this).children("img.show").hide();
+				$(this).children("img.hide").animate({marginRight:'0px'},'slow')
+			};
+		},function(){
+			if($(this).prop("className") == "youhui"){
+				$(this).children("img.hide").hide('slow');
+			}else{
+				$(this).children("img.hide").animate({marginRight:'-143px'},'slow',function(){$(this).hide;$(this).next("img.show").show();
+				});
+			}
+		});
+		$("#top_btn").click(function(){
+			if(scroll == "off") return;
+			$("html,body").animate({scrollTop:0},600);
+		});
+	});
+</script>
+</body>
+</html>

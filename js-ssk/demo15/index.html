@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery 搜索框</title>
+	<style type="text/css">
+	*{margin:0;padding:0;}
+		.c1{color:gray;font-style:italic;}
+		.c2{color:#000;font-style:normal;}
+		form{
+			width: 460px;
+			height: 50px;
+			margin:100px auto;
+		}
+		#search{
+			width: 360px;
+			height: 50px;
+			border:none;
+			background: #cdf;
+			font-size: 23px;
+			text-indent: 20px;
+		}
+		button{
+			width: 100px;
+			height: 50px;
+			font-size: 23px;
+			border:none;
+		}
+		button:active{background: #222;color: #fff;}
+		input,button{outline: none;}
+	</style>
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript">
+		 $(function(){
+			  $('#search').val("请输入搜索内容").addClass("c1");
+			  $('#search').focus(function(){//搜索框获得焦点时
+			   	$('#search').val("").addClass("c2");
+			  });
+			  $('#search').blur(function(){//搜索框失去焦点时
+			   	if($('#search').val()==""){
+			   		$('#search').val("请输入搜索内容").attr("class","c1");
+			   }
+			  });
+		 });
+	</script>
+</head>
+<body>
+	<form>
+		<input type="text" id="search" /><button>搜索</button>
+	</form>
+</body>
+</html>

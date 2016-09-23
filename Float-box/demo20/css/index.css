@@ -1,0 +1,56 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	height: 1600px;
+	background: rgba(0,0,0,0.8);
+}
+a,img{
+	border:none;
+}
+#wrap{
+	width: 131px;
+	height: 143px;
+	position: fixed;
+	top:258px;
+	right:0;
+}
+
+*html #wrap{
+	margin-top: 258px;
+	position: absolute;
+	top:expression(eval(document.documentElement.scrollTop));
+}
+
+#wrap li{
+	width: 131px;
+	height: 60px;
+	list-style: none;
+}
+
+#wrap li img{float: right;}
+
+#wrap li a{
+	height: 49px;
+	min-width: 47px;
+	max-width: 131px;
+	display: block;
+	float: right;
+}
+
+#wrap li a .show{display: block;}
+
+#wrap li a .hide{
+	margin-right: -143px;
+	cursor: pointer;
+	cursor: hand;
+}
+
+#wrap li a.youhui .hide{
+	display: none;
+	position: absolute;
+	top: 2px;
+	right: 190px;	
+}
+

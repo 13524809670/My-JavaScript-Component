@@ -1,0 +1,135 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td,div,iframe {margin:0;padding:0;}
+body, button, input, select, textarea {font:12px/1.5 arial,tahoma,sans-serif;font-family:微软雅黑,Microsoft YaHei;}
+h1, h2, h3, h4, h5, h6{font-family:微软雅黑,Microsoft YaHei;}
+h3{font-size:14px;}
+img{border:0px;font-size:0;}
+
+
+.wrap{
+		width:962px;
+		height:172px;
+		margin:40px auto;
+		border:1px solid #CCD5F1;
+	}
+
+.con{
+		position:relative;
+		width:960px;
+		height:170px;
+		overflow:hidden;
+		margin:1px auto;
+	}
+
+	.banner{ 
+			height: 100%;
+			width: 200%;
+			overflow: hidden;
+			position: absolute;
+			right: 0;
+			top: 0;
+			}
+
+	.banner .flmenu{
+				position:relative;
+				float:right;
+				height:100%;
+				width:39%;
+				background:#F3F9F8;
+				}
+
+	.banner .flmenu a{
+				position:absolute;
+				width:748px;
+				height:100%;
+				display:block;
+				overflow:hidden;
+				top:0;
+				right:0;
+				opacity:0;
+				z-index:1;
+				}
+
+	.banner .flmenu a img{
+					display: block;
+					height: 100%;
+					width: auto;
+					position: absolute;
+					right: 0;
+					top: 0;
+					z-index: 2;
+					}
+
+	.banner .frmenu{
+				position:relative;
+				float:right;
+				height:100%;
+				width:11%;
+				background:#F4F4F4;
+				}
+
+	.banner .frmenu li, .frmenu span{
+					background:url(../images/roll_btn.png) no-repeat;		
+				}
+
+	.banner .frmenu li{position:relative;height:20%;}
+
+	.banner .frmenu li span{
+					position:absolute;
+					top:0;
+					left:0;
+					height:100%;
+					overflow:hidden;
+					display:block;
+					z-index:1;
+					}
+					
+	.banner .frmenu li a{
+					position:relative;
+					height:100%;
+					width:100%;
+					display:block;
+					z-index:2;
+					}
+
+	.banner .frmenu li.a1{ background-position:36px -40px;}
+
+	.banner .frmenu li.a1 span{ 
+						background-position:-99px -40px;
+						background-color:#FF4E00;
+						}
+
+
+
+	.banner .frmenu li.a2{ background-position:36px -83px;}
+
+	.banner .frmenu li.a2 span{
+						background-position:-99px -83px;
+						background-color:#FFC502;
+						}
+
+
+
+	.banner .frmenu li.a3{ background-position:36px -127px;}
+
+	.banner .frmenu li.a3 span{
+						background-position:-99px -127px;
+						background-color:#4C8502;
+						}
+
+
+
+	.banner .frmenu li.a4{ background-position:36px -167px;}
+
+	.banner .frmenu li.a4 span{ 
+						background-position:-99px -167px;
+						background-color:#009CFF;
+						}
+
+
+
+	.banner .frmenu li.a5{ background-position:36px -208px;}
+
+	.banner .frmenu li.a5 span{
+						background-position:-99px -208px;
+						background-color:#A19FEA;
+						}
